@@ -134,7 +134,8 @@ int main () //Função principal
 		printf("O que você deseja fazer? \n\n");
 		printf("\t1-Cadastrar um(a) colaborador(a)\n");
 		printf("\t2-Consultar um(a) colaborador(a)\n");
-		printf("\t3-Excluir um(a) colaborador(a)\n\n"); 
+		printf("\t3-Excluir um(a) colaborador(a)\n");
+		printf("\t4-Sair do sistema\n\n");  
 		printf("Opção desejada: "); 
 		//Fim do menu
 		
@@ -154,6 +155,11 @@ int main () //Função principal
 			
 			case 3:
 			exclusao(); //Chamada da função "exclusão"
+			break;
+			
+			case 4:
+			printf("\n\nVocê saiu do sistema. Até a próxima!\n\n");
+			return 0;
 			break;
 			
 			default:
